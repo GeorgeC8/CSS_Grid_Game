@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: repeate(auto-fill, minmax(100px,1fr));
+  grid-template-rows: repeat(12, 1fr);
+  /* Style rows and columns */
+}
+
+#title {
+  grid-column-start:1;
+  grid-column-end:-1;
+}
+
+.friend {
+grid-row: span 1;
+grid-column: span 1;
+}
+
+.mom{
+ grid-column: span 1;
+ grid-row: span 2;
+}
+
+.dad{
+grid-column: span 2;
+grid-row: span 2;
+}
+.grandma{
+grid-column: span 2;
+grid-row:span 1;
+}
+/* Style other types of family members below*/
+
+
